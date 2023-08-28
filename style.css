@@ -1,68 +1,144 @@
 body{
     background-color: #1F2937;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    padding: 10px 50px;
+    padding: 0rem;
+    margin: 0%;
     display: flex;
     flex-direction: column;
+    background-image: url('./images/01.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 
 }
 
 header{
     display: flex;
+    flex-wrap: wrap;
     color: #F9FAF8;
     justify-content:flex-end;
-    width: 100%;
+    align-items: center;
+    padding: 0.3rem 17rem;
+}
+
+.header-links{
+    padding: 0rem;
 }
 
 .logo {
     color: #F9FAF8;
-    font-size: 24px;
+    font-size: 1.7rem;
     margin-right: auto;
-    align-self: center;
 }
 
-a{
+.logo h3{
+    margin: 0;
+    font-weight: bolder;
+}
+
+.header-links a{
+    margin-top: 0;
     text-decoration: none;
     color: #F9FAF8;
-    font-size: 18px;
-    margin: 10px;
+    font-weight: bold;
+    font-size: 1.6rem;
 }
 
 .highlight{
-    padding: 40px;
-    height: 500px;
+    padding: 9rem 17rem;
+    height: 22rem;
     color: #F9FAF8;
+    /* background-color: blue; */
 }
 
 .highlight .container{
-    padding: 10px;
     display: flex;
-    gap: 100px;
+    flex-wrap: wrap;
+    gap: 3em;
     overflow: hidden;
     justify-content: center;
     align-items: center;
 }
 
 .highlight h1{
-    font-size: 48px;
-    font-style: bold;
-    margin: 0px;
+    font-size: 4rem;
+    margin: 0;
+    max-width: 37em;
 } 
 
 .description{
-    flex-shrink: 10;
-    max-width: 500px;
+    max-width: 37em;
 }
 
 .highlight p{
-    font-size: 18px;
-    flex-shrink: 1;
+    font-size: 1.4em;
+    margin: 0;
 }
 
 #highlight{
-    width: 30%;
-    margin: 10px;
-    height: 325px;
+    width: 40em;
+    height: 20em;
     object-fit: cover;
     border: #F9FAF8 1px solid;
 }
+
+.container button{
+    font-size: 1.4em;
+    font-style: bolder;
+    padding: 0.5em 2.5em;
+    background-color: cadetblue;
+    color: #F9FAF8;
+    margin-top: 0.6em;
+    border-style: none;
+    border-radius: 10%;
+}
+
+.container button:hover{
+    background-color: wheat;
+    color: dimgrey;
+    
+}
+
+.info{
+    background-color:#F9FAF8;
+    height: fit-content;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info h2{
+    color: #1F2937;
+    font-size: 2.7rem;
+    margin: 0;
+}
+
+.infocard{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80rem;
+    height: fit-content;
+    justify-content: space-around;
+}
+
+.cards{
+    padding: 1em;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.cards img{
+    height: 15em;
+    width: 15em;
+    object-fit: cover;
+}
+
+.cards p{
+    color: #1F2937;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
