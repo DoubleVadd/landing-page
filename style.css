@@ -5,7 +5,7 @@ body{
     margin: 0%;
     display: flex;
     flex-direction: column;
-    background-image: url('./images/01.png');
+    /* background-image: url('./images/01.png'); */
     background-repeat: no-repeat;
     background-size: 100% auto;
 
@@ -41,6 +41,7 @@ header{
     color: #F9FAF8;
     font-weight: bold;
     font-size: 1.6rem;
+    margin-right: 1em;
 }
 
 .highlight{
@@ -117,7 +118,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     width: 80rem;
-    height: fit-content;
+    height: 35rem;
     justify-content: space-around;
 }
 
@@ -131,10 +132,25 @@ header{
 }
 
 .cards img{
+    margin-top: 5em;
+    border-radius: 20px;
     height: 15em;
     width: 15em;
     object-fit: cover;
+    border: 4px solid black;
+    filter:blur(5px)
 }
+
+.cards img:hover{
+    /* border-radius: 100px; */
+    border: 0px solid wheat;
+    height: 16em;
+    width: 16em;
+    /* box-shadow: 10px 10px 1px 10px rgba(0, 0, 255, 0.295); */
+    filter:blur(0px)
+    
+}
+
 
 .cards p{
     color: #1F2937;
@@ -142,3 +158,92 @@ header{
     font-size: 1.5em;
 }
 
+
+.quote{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+.quote-written{
+    font-weight: 400;
+    font-style: italic;
+    width: 30em;
+    font-size: 2em;
+    color: #1F2937;
+    margin-bottom: 0;
+}
+
+.author{
+    font-style: oblique;
+    text-align: end;
+    color: #1F2937;
+    font-size: 1.6em;
+    margin-right: 5em;
+    margin-top: 0;
+}
+
+.important-info{
+    background-color: rgb(26, 113, 184);
+    padding: 1em;
+    height: 10rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.important-info h3{
+    text-align: left;
+    margin: 0;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.important-info p{
+    text-align: left;
+    font-size: 1em;
+    font-weight: 100;
+    margin-top: 0.4em;
+}
+.info-left{
+    margin-right: 20em;
+}
+
+
+.important-info button{
+    padding: 0.3em 2em;
+    border-radius: 12px;
+    color: #F9FAF8;
+    font-weight: 700;
+    border: 2px solid white;
+    background: none;
+    font-size: 1.6em;
+}
+
+
+.important-info button:hover{
+    padding: 0.3em 2em;
+    border-radius: 12px;
+    color: rgb(26, 113, 184);
+    font-weight: 700;
+    background:#F9FAF8;
+    font-size: 1.6em;
+}
+
+.highlight2{
+    background-color: #F9FAF8;
+    height: 10em;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    padding: 1em;
+    height: 3em;
+    color: #F9FAF8;
+}
